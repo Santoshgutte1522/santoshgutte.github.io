@@ -438,3 +438,48 @@ footer {
   font-size: 0.85rem;
   border-top: 1px solid var(--border-color);
 }
+
+@media (max-width: 640px) {
+  .nav-container {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 0.9rem 1.25rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 0.6rem 1rem;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
+  }
+
+  .hero {
+    padding: 4rem 0 3rem;
+  }
+
+  .hero-name {
+    font-size: 2.6rem;
+  }
+
+  .hero-role {
+    font-size: 1.35rem;
+  }
+
+  .skills-grid,
+  .projects-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .about-card,
+  .skill-card,
+  .project-card {
+    padding: 1.4rem;
+  }
+
+  .contact-box {
+    padding: 2rem 1.25rem;
+  }
+}
